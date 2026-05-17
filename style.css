@@ -15,11 +15,12 @@ body{
 header{
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .header-div{
     background-color: white;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.137);
     height: 72px;
     display: flex;
     flex-direction: row;
@@ -40,10 +41,6 @@ header{
     font-size: 14px;
     flex: 1;
 }
-
-/* .header-nav_list{
-    height: 20px;
-} */
 
 .header-nav_list_content{
     display: flex;
@@ -83,8 +80,39 @@ header{
     padding: 8px 16px;
 }
 
-.video-container{
+.video-section{
+    padding-top: 248px;
     width: 100%;
-    padding: 0px 80px 0px 80px;
+    padding: 248px 80px 0px 80px;
 }
 
+.video-container{
+    z-index: 900;
+    position: relative;
+}
+
+.video{
+    width: 100%;
+}
+
+.button-pause{
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000001a;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+}
+.bi-pause-circle{
+    color: white;
+    font-size: 16px;
+}
+
+.button-pause:hover{
+    border: 1px solid white;
+}
