@@ -49,7 +49,7 @@ header{
     gap: 24px;
 }
 
-.header-lang-login{
+.header-nav_lang_login{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -81,19 +81,19 @@ header{
 }
 
 .video-section{
-    padding-top: 100px;
+/*     padding-top: 100px; */ /* Mejor poner un height 100vh y ahi se puede
+poner alingh items */
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    background-color: red;
+    justify-content: center; /* si no tiene height no se va a alinear a ningun lado */
 /*     padding: 248px 80px 0px 80px; */
 }
 
 .video-container{
     z-index: 900;
     position: relative;
-    background-color: red;
     width: 1000px;/* agregado en correccion */
     display: flex;/* agregado en correccion- rompe display natural que tenga el video-
     el video deja de tener su display natural./ 
