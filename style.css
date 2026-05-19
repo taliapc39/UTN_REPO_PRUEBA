@@ -81,14 +81,23 @@ header{
 }
 
 .video-section{
-    padding-top: 248px;
+    padding-top: 100px;
     width: 100%;
-    padding: 248px 80px 0px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: red;
+/*     padding: 248px 80px 0px 80px; */
 }
 
 .video-container{
     z-index: 900;
     position: relative;
+    background-color: red;
+    width: 1000px;/* agregado en correccion */
+    display: flex;/* agregado en correccion- rompe display natural que tenga el video-
+    el video deja de tener su display natural./ 
+    con el flex, todos sus hijos dejan de ser lo que eran (video era inline block, ahora no.)*/
 }
 
 .video{
@@ -105,8 +114,10 @@ header{
     align-items: center;
     background-color: #0000001a;
     position: absolute;
-    bottom: 16px;
-    right: 16px;
+/*     bottom: 16px;
+    right: 16px; */ /* eliminado en correccion */
+    right: 24px;
+    bottom: 24px;/* estaba bien lo de arriba u.u- ella lo habia hecho a ojimetro por que no funcionaba el relative(estaba) */
 }
 .bi-pause-circle{
     color: white;
